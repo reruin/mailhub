@@ -1,0 +1,27 @@
+{
+  "name": "mailhub",
+  "description": "A lightweight mail receiver with web UI.",
+  "version": "1.0.0",
+  "bin": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "cross-env NODE_ENV=dev nodemon index.js -i ./cache"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^12.0.0",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-onerror": "^4.1.0",
+    "mailparser": "^3.5.0",
+    "nanoid": "3.x",
+    "smtp-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
